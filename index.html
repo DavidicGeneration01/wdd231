@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David O. Alade">
+    <meta name="description" content="Home Page for WDD231 - Web Development I">
+    <title>WDD 231 - Course Home Page | David O. Alade</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/normalize.css" media="screen">
+    <link rel="stylesheet" href="styles/index.css" media="screen">
+    <link rel="stylesheet" href="styles/index-large.css" media="screen">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/course-list-array.js" defer></script>
+
+    <meta property="og:title" content="WDD 231 - Course Home Page | David O. Alade">
+    <meta property="og:description" content="Home Page for WDD231 - Web Development I">
+    <meta property="og:image" content="https://www.churchofjesuschrist.org/imgs/45e59c1c726d11ec9eb5eeeeac1ea79d5f76a9ce/full/!1280%2C674/0/default">
+
+    <meta property="og:url" content="https://davidicgeneration01.github.io/WDD-231/">
+
+
+</head>
+
+<body>
+
+    <div class="intro-container">
+        <img src="images/logo.jpg" alt="Photo of logo">
+        <h1>Course Home Page</h1>
+        <span id="menu">☰</span>
+    </div>
+
+    <header>
+        <nav class="nav-links">
+            <a href="#"> <span class="close-menu">✖</span> </a>
+            <a href="index.html">Home</a>
+            <a href="chamber/siteplan.html">Chamber Project</a>
+            <a href="#">Final Project</a>
+            
+        </nav>
+    </header>
+
+    <h3 class="home">Home</h3>
+
+    <main>
+        <div class="main-container">
+            <section class="tag-one">
+                <h2>About Me</h2>
+                
+                <p class="My-Bio">My name is David O. Alade, and I am currently a student at Brigham Young University–Idaho, pursuing a degree in Software Development. Throughout my academic journey, I have developed a strong foundation in programming, web technologies, and database management. I have completed courses such as Introduction to Python, Python with Functions, Programming with Classes in C#, Web Dynamics I and II, and Introduction to Databases using MySQL Workbench. At the moment, I am enhancing my skills further by taking Web Development I, where I am learning to design and develop user-friendly websites.</p>
+                
+                
+            </section>
+
+            <section class="tag-two">
+                <h2>Student Photo</h2>
+                <img src="images/My-Photo.jpg" alt="David O. Alade" class="My-Photo">
+                <p>David O. Alade</p>
+            </section>
+
+            <section class="tag-three">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <div class="btn-container">
+                    <button class="all-course">All</button>
+                    <button class="cse-course">CSE</button>
+                    <button class="wdd-course">WDD</button>
+                </div>
+                <hr>
+                <div class="courses-container"></div>
+            </section>
+
+        </div>
+        <span class="total-credit"></span>
+        <dialog id="course-details"></dialog>
+    </main>
+
+    <footer class="footer-nav">
+
+
+    <div class="footer-icons" style="margin: 10px 0;">
+        <a href="https://www.linkedin.com/in/davidalade01" target="_blank" aria-label="LinkedIn" style="margin: 0 10px; color: inherit;">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/davidicgeneration01" target="_blank" aria-label="GitHub" style="margin: 0 10px; color: inherit;">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://x.com/SonofGod3471" target="_blank" aria-label="X (Twitter)" style="margin: 0 10px; color: inherit;">
+            <i class="fab fa-x-twitter fa-2x"></i>
+        </a>
+    </div>
+
+    <div class="flag-name">
+        <span id="currentYear">&copy;</span>
+        <p> ◦ David O Alade ◦ Nigeria </p>
+        <img src="images/Nig-flag.jpg" alt="Nigerian Flag" loading="lazy">
+    </div>
+    <p id="lastModified"></p>
+
+</footer>
+
+    </footer>
+
+</body>
+
+</html>

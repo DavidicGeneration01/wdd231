@@ -1,0 +1,33 @@
+{
+    "family_name": "Okonkwo",
+    "move_in_date": "2025-07-07",
+    "number_of_people": 5,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Emeka Okonkwo",
+            "gender": "Male",
+            "birthdate": "1980-01-15"
+        },
+        {
+            "name": "Ada Okonkwo",
+            "gender": "Female",
+            "birthdate": "1982-03-22"
+        },
+        {
+        "name": "Goodnesss Okafor",
+        "gender": "Male",
+        "birthdate": "2000-04-4"
+      },
+      {
+        "name": "Promise Okafor",
+        "gender": "Female",
+        "birthdate": "1998-07-13"
+      },
+      {
+        "name": "Wisdom Okafor",
+        "gender": "Male",
+        "birthdate": "1997-09-15"
+      }
+    ]
+}
