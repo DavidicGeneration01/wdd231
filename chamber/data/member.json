@@ -5,6 +5,7 @@
             "address": "No 23 Tutu Layout, Kubwa Abuja",
             "phoneNumbers": "(+234) 814-343-4353",
             "websitesUrls": "https://www.achivsproduction.com",
+            "imageUrl": "img/lojo2.png",
             "tagLine": "See the world through my Lens!",
             "membershipLevels": [
                 {"silver": "🥈"}
@@ -15,6 +16,7 @@
             "address": "No 24 Tudun Fulani, Sabon Gari Bwari Abuja",
             "phoneNumbers": "(+234) 913-253-5023",
             "websitesUrls": "https://www.lunajuiceconfectionary.com",
+            "imageUrl": "img/lojo7.png",
             "tagLine": "Prepared with Love and Goodness",
             "membershipLevels": [
                 {"gold": "🥇"}
@@ -25,6 +27,7 @@
             "address": "34 St. Peters Avenue, Wuse, Abuja",
             "phoneNumbers": "(+234) 803-754-7434",
             "websitesUrls": "https://www.acromatventures.com",
+            "imageUrl": "img/lojo3.png",
             "tagLine": "Trust and Integrity",
             "membershipLevels": [
                 {"members": "⭐"}
@@ -35,6 +38,7 @@
             "address": "No 45 Allen Street, Lugbe, Abuja",
             "phoneNumbers": "(+234) 804-906-5674",
             "websitesUrls": "https://www.w3integratedventures.com",
+            "imageUrl": "img/lojo.png",
             "tagLine": "Reliability and Trust",
             "membershipLevels": [
                 {"members": "⭐"}
@@ -45,6 +49,7 @@
             "address": "945 Abuja-Suleja Express Highway, Suleja, Abuja",
             "phoneNumbers": "(+234) 901-755-8256",
             "websitesUrls": "https://www.bontufarms.com.ng",
+            "imageUrl": "img/lojo5.png",
             "tagLine": "Harvesting Nature's Best",
             "membershipLevels": [
                 {"gold": "🥇"}
@@ -55,6 +60,7 @@
             "address": "Block 9 Wuse Market, Wuse, Abuja",
             "phoneNumbers": "(+234) 803-456-7444",
             "websitesUrls": "https://www.nolzventures.com",
+            "imageUrl": "img/lojo4.png",
             "tagLine": "Innovating Tomorrow Today",
             "membershipLevels": [
                 {"silver": "🥈"}
@@ -65,6 +71,7 @@
             "address": "Street 35 Central Business District, Abuja",
             "phoneNumbers": "(+234) 913-756-7399",
             "websitesUrls": "https://www.digestsignatures.com",
+            "imageUrl": "img/lojo6.png",
             "tagLine": "Your Health, Our Commitment",
             "membershipLevels": [
                 {"members": "⭐"}

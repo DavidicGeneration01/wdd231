@@ -23,11 +23,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/.ico">
+
+    <link rel="stylesheet" href="styles/directory.css" media="screen">
+    <link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/.ico">
+    <link rel="stylesheet" href="styles/directory-large.css" media="screen">
+    <link rel="stylesheet" href="styles/directory-mobile.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Font Awesome 6.6.0 -->
+    
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+
 </head>
 
 <body>
   <header>
-    <div class="header-content container">
+    <!-- <div class="header-content container">
       <div class="logo">
         <img src="img/logo.png" alt="Timbuktu Chamber of Commerce Logo" class="logo-img" width="48" height="48">
         <span class="logo-text">
@@ -58,13 +68,67 @@
           </li>
         </ul>
       </nav>
+    </div> -->
+
+    <div class="header-content container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Timbuktu Chamber of Commerce Logo" class="logo-img" width="48" height="48">
+            <span class="logo-text">
+            <span class="logo-title">Timbuktu</span>
+            <span class="logo-subtitle">Chamber of Commerce</span>
+            </span>
+        </div>
+
+        <button class="dark-toggle header-toggle" id="darkToggle" aria-label="Toggle dark mode">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="14" fill="#222"/>
+                <path d="M16 2a14 14 0 0 0 0 28V2z" fill="#eee"/>
+            </svg>
+        </button>
+
+        <nav class="main-nav">
+            <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
     </div>
+
   </header>
 
+  <main>
 
-  
+        <section class="intro-msg-container">
+            <h1>Business Directory</h1>
+            
+            <p>This site is to serve as a resource hub for businesses in the city of Timbuktu with the vision to build a community where
+                businesses can thrive, foster a community of growth, and contribute to economic development.
+            </p>
+            <br>
+            <p> Find all members of the Abuja Chamber of Commerce below; </p>
+        </section>
 
+        <div class="list-grid-icons">
+            <button id="grid-btn" type="button"> 
+                <i class="fa fa-th"></i> 
+            </button>
 
+            <button id="list-btn" type="button"> 
+                <i class="fas fa-list"></i> 
+            </button>
+        </div>
+
+        <section id="comp-grid"></section>
+        <section id="comp-list"></section>
+
+    </main>
 
 
    <footer>
