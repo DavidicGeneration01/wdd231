@@ -1,16 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileNav = document.querySelector('.mobile-nav'); // We need to add this to HTML if we want a slide-out menu
+// Hamburger toggle and dark mode functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+  const darkToggle = document.getElementById('darkToggle');
 
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', () => {
-            // For a basic toggle, we can just change the display of the mobile navigation.
-            // If you implement a full slide-out menu, you'd toggle a class here.
-            console.log('Mobile menu toggled (functionality to be added if a mobile nav element is present)');
-            // Example if you add a .mobile-nav element that is initially display: none;
-            // if (mobileNav) {
-            //     mobileNav.classList.toggle('active'); // You'd define 'active' in CSS to show it
-            // }
-        });
-    }
+  // Hamburger toggle
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+
+    // Optional: Close menu when a link is clicked (mobile UX)
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+      });
+    });
+  }
+
+  // Dark mode toggle
+  if (darkToggle) {
+    darkToggle.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  }
 });

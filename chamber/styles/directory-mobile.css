@@ -1,5 +1,5 @@
 /* --- Corrected Responsive Styles for Mobile Screens (max-width: 680px) --- */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 340px) {
     /* General Layout Adjustments */
     body {
         font-size: 14px; 
@@ -155,6 +155,17 @@
     }
 
     /* Main Content & Directory Styles */
+
+    @media only screen and (max-width: 340px) {
+    #comp-grid div {
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+
+    .list-grid-icons i {
+        font-size: 20px;
+    }
+}
     main {
         padding: 0 10px;
     }

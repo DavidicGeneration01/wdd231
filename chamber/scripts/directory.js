@@ -80,7 +80,7 @@ function displayList(allCompanies) {
             <div>${allCompany.name}</div>
             <div>${allCompany.address}</div>
             <div>${allCompany.phoneNumbers}</div>
-            <div>${allCompany.websitesUrls}</div>
+            <div><a href="${allCompany.webAddress}" target="_blank">${allCompany.webAddress}</a></div>
         `
         getCompanyList.appendChild(table);
         
