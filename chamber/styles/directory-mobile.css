@@ -1,168 +1,126 @@
-/* --- Corrected Responsive Styles for Mobile Screens (max-width: 680px) --- */
-@media only screen and (max-width: 340px) {
-    /* General Layout Adjustments */
-    body {
-        font-size: 14px; 
-    }
-
-    .container {
-        padding: 0 10px; /* Consistent side padding */
-    }
-
-    /* Header Refinements */
-    header {
-        padding: 8px 0; /* Slightly reduced vertical padding for header */
-        box-shadow: 0 1px 4px rgba(26,53,87,0.07); /* Lighter shadow for mobile */
-    }
-
-    .header-content {
-        display: flex;
-        justify-content: space-between; /* Pushes logo left, controls right */
-        align-items: center; /* Vertically centers items */
-        flex-wrap: nowrap; /* Prevents wrapping of header elements */
-        gap: 8px; /* Gap between logo, toggle, and hamburger */
-        padding: 0 5px; /* Add some internal padding within the header-content for edge spacing */
-    }
-
-    /* Logo Styling */
-    .logo {
-        flex-shrink: 1; /* Allow logo to shrink */
-        min-width: 0; /* Allow content to shrink below intrinsic size */
-        padding: 4px 6px; /* Reduced padding for logo container */
-        gap: 6px; /* Reduced gap between image and text */
-        display: flex;
-        align-items: center;
-    }
-
-    .logo-img, .logo-icon {
-        width: 30px; /* Smaller logo image */
-        height: 30px;
-    }
-
-    .logo-text {
-        flex-grow: 1; /* Allow text to take available space */
-        min-width: 0;
-    }
-
-    .logo-title {
-        font-size: 1.1rem; /* Smaller title font size */
-        white-space: nowrap; /* Prevent title from wrapping */
-        overflow: hidden; /* Hide overflow if it gets too long */
-        text-overflow: ellipsis; /* Add ellipsis for overflow */
-    }
-
-    .logo-subtitle {
-        font-size: 0.65rem; /* Smaller subtitle font size */
-        white-space: nowrap; /* Prevent subtitle from wrapping */
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    /* Dark Mode Toggle Button */
-   @media only screen and (max-width: 680px) {
-    /* ... (previous styles remain the same) ... */
-
-    /* Dark Mode Toggle Button */
-    .dark-toggle.header-toggle {
-        margin-right: -90px; /* Reduced space between dark mode toggle and hamburger */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(255,255,255,0.5);
-        border-radius: 6px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        padding: 4px;
-        z-index: 102;
-    }
-    .dark-toggle.header-toggle svg {
-        width: 28px;
-        height: 28px;
-    }
-    .dark-toggle.header-toggle svg circle {
-        fill: var(--primary-color); /* The color of the "dark" half (e.g., your dark blue) */
-    }
-
-    .dark-toggle.header-toggle svg path {
-        fill: var(--background-color); /* The color of the "light" half (e.g., your light sand background) */
-    }
-
-    /* Ensure it changes correctly when dark mode is active */
-    body.dark-mode .dark-toggle.header-toggle svg circle {
-        fill: var(--text-color); /* Changes to light text color in dark mode */
-    }
-
-    body.dark-mode .dark-toggle.header-toggle svg path {
-        fill: var(--primary-color); /* Changes to dark primary color in dark mode */
-    }
-
-    /* ... (rest of your @media 680px styles remain the same) ... */
-}
-
-    /* Main Navigation Container (holds hamburger) */
-    .main-nav {
-        order: 3; /* Positions main-nav to the far right */
-        display: flex;
-        align-items: center;
-        margin-left: 0;
-        flex-shrink: 0; /* Prevent it from shrinking */
-    }
-
-    /* Hamburger Icon Styling */
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 28px; /* Slightly smaller width for hamburger area */
-        height: 20px; 
-        cursor: pointer;
-        position: relative;
-        z-index: 101;
-        height: 24px;
-        padding: 2px 0; /* Add slight padding for vertical centering of bars */
-    }
-
-    .hamburger .bar {
-        width: 100%;
-        height: 5px; /* Thinner bars */
-        background-color: var(--primary-color);
-        transition: all 0.3s ease;
-    }
-
-
-    /* Mobile Navigation Menu (Hamburger content) */
-    .nav-links {
-        position: fixed; 
-        top: 0; 
-        right: -100vw; /* Off-screen by default */
-        width: 100vw; 
-        height: 100vh; 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: var(--primary-color);
-        padding: 0;
-        transition: right 0.3s ease-in-out;
-        z-index: 98;
-        overflow-y: auto;
-    }
-
-    .nav-links.active {
-        right: 0; /* Slides into view */
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-        width: 80%;
-        text-align: center;
-    }
-
-    .nav-links a {
-        color: #fff;
-        font-size: 1.2em;
-        padding: 10px 0;
-        display: block;
-    }
+@media screen and (max-width: 767px) {
+  /* General Adjustments */
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 12px;
+  }
+  
+  /* Header */
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    position: relative;
+  }
+  .logo {
+    max-width: 40vw;
+    padding: 4px 8px;
+  }
+  .logo-img,
+  .logo-icon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .logo-title {
+    font-size: 1rem;
+  }
+  .logo-subtitle {
+    font-size: 0.75rem;
+  }
+  
+  /* Navigation */
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: -100%;
+    background: var(--nav-bg);
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    padding: 12px 0;
+    z-index: 150;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    min-width: 10px;
+    width: 40vw; /* Make menu wider horizontally */
+    max-width: 95vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-links.active {
+    max-height: 500px; /* Enough for all links */
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 0 4px 0; /* Add small margin-bottom for separation */
+    /* padding: 8px 8px;  */
+    width: 100%;
+  }
+  .nav-links li:last-child {
+    margin-bottom: 0; /* Remove margin from last item */
+  }
+  
+  .nav-links a {
+    color: #fff !important;
+    display: block;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 52px; /* Leave space for dark mode button */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 300;
+    margin-left: 0;
+    background: rgba(255,255,255,0.5); /* Slightly transparent background */
+    border-radius: 6px;
+    /* Optional: add a subtle box-shadow for visibility */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  
+  .dark-toggle {
+    display: flex !important;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 301;
+    background: rgba(255,255,255,0.5);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    align-items: center;
+    padding: 4px;
+  }
+  .nav-links .dark-toggle {
+    display: none !important; /* Hide dark mode button in nav menu on mobile */
+    position: static;
+    background: none;
+    box-shadow: none;
+    padding: 0 0 0 12px;
+  }
+  
 
     /* Main Content & Directory Styles */
 
@@ -184,72 +142,22 @@
         padding: 20px 0;
         text-align: center;
     }
-    .intro-msg-container h1 {
-        margin-top: 0;
-    }
 
     .list-grid-icons {
         display: flex;
         justify-content: center;
-        align-items: center;
         gap: 15px;
         padding: 10px 0;
     }
-    .list-grid-icons button {
-        border: none;
-        background-color: var(--primary-color);
-        cursor: pointer;
-        width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        padding: 0;
-        transition: background 0.2s, border 0.2s;
-    }
-    .list-grid-icons i {
-        font-size: 22px;
-        color: white;
-        width: 28px;
-        height: 28px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-    .list-grid-icons button:hover {
-        border: var(--primary-color) solid .5px;
-        background-color: white;
-    }
-    .list-grid-icons button:hover i {
-        color: var(--primary-color);
-    }
 
     #comp-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
         padding: 10px;
-        width: 100%;
-        box-sizing: border-box;
-        justify-items: center;
+        gap: 15px;
     }
+
     #comp-grid div {
-        padding: 15px;
-        font-size: 0.95rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        border: .5px solid var(--primary-color);
-        border-radius: 8px;
+        padding: 20px;
         box-shadow: 3px 3px var(--primary-color);
-        background: var(--panel-bg, #fff);
-        width: 100%;
-        max-width: 340px;
-        box-sizing: border-box;
-        justify-content: center;
-        align-items: center;
     }
     #comp-grid div img {
         max-width: 80%;
@@ -257,82 +165,24 @@
     }
     #comp-grid div h1 {
         font-size: 1.2em;
-        color: var(--primary-color);
     }
     #comp-grid div p {
         font-size: 0.9em;
-    }
-    #comp-grid div p:nth-of-type(1){
-        display: flex;
-        justify-content: center;
-    }
-
-    #comp-list {
-        display: none;
-        margin-top: 20px;
-        padding: 20px;
-    }
-    #comp-list .table-list:nth-of-type(even){
-        background-color: var(--secondary-color);
-    }
-    .table-list {
-        display: grid;
-        grid: auto/1fr;
-        gap: 10px;
-        padding: 10px;
-        justify-content: space-evenly;
     }
 
     /* Footer Adjustments */
     footer {
         padding: 30px 0 10px;
         margin-top: 30px;
-        background: var(--primary-color);
-        color: #fff;
     }
 
     .footer-content {
-        display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
         text-align: center;
     }
 
     .social-icons {
-        display: flex;
         justify-content: center;
-        gap: 18px;
     }
-    .social-icons a {
-        color: #fff;
-        font-size: 2em;
-        transition: color 0.2s;
-    }
-    .social-icons a:hover {
-        color: var(--secondary-color);
-    }
-    footer strong {
-        font-family: var(--font-heading, Arial, sans-serif);
-        font-size: 1.05em;
-    }
-}
-
-/* Smallest screens (up to 340px) */
-@media only screen and (max-width: 340px) {
-  body {
-    font-size: 13px;
-  }
-  .logo-title {
-    font-size: 1em;
-  }
-  .logo-subtitle {
-    font-size: 0.6em;
-  }
-  #comp-grid div {
-    padding: 10px;
-    font-size: 0.85rem;
-  }
-  .list-grid-icons i {
-    font-size: 18px;
-  }
 }
