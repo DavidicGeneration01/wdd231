@@ -1,11 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const darkToggle = document.getElementById('darkToggle');
-  if (darkToggle) {
-    darkToggle.addEventListener('click', function() {
-      document.body.classList.toggle('dark-mode');
-    });
-  }
-});
 
 const getCompanyGrid = document.querySelector("#comp-grid");
 const getCompanyList = document.querySelector("#comp-list");
