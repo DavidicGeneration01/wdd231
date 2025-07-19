@@ -26,12 +26,13 @@
 
     
     <link rel="stylesheet" href="styles/index.css" media="screen">
-    <!-- <link rel="stylesheet" href="styles/directory-large.css" media="screen"> -->
+    <link rel="stylesheet" href="styles/directory.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Font Awesome 6.6.0 -->
-    
-    <script src="scripts/index.js" defer></script>
+
+    <script src="scripts/index.js" type="module"></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+
 </head>
 <body>
   <header>
@@ -79,40 +80,44 @@
     <section class="main-panels container">
       <h1>Home</h1>
       <div class="panels-grid">
+        
+        <!-- Events Panel -->
         <div class="panel events-panel">
           <div class="panel-title">Events</div>
           <div class="panel-content">
-            <!-- Placeholder for events -->
+            <p>
+              <strong>Abuja Networking Conference</strong><br>
+              Date: 28th April 2025<br>
+              Time: 4pm<br>
+              Venue: Transcorp Hilton, Abuja.
+            </p>
+          </div>
         </div>
-      </div>
+
+        <!-- Weather Panel -->
         <div class="panel weather-panel">
           <div class="panel-title">Current Weather</div>
           <div class="panel-content">
             <div class="weather-main">
-              <i class="fas fa-cloud-sun fa-2x"></i>
-              <div>
-                <strong>75° F</strong><br>
-                Partly Cloudy<br>
-                High: 85°<br>
-                Low: 52°<br>
-                Humidity: 34%<br>
-                Sunrise: 7:30am<br>
-                Sunset: 9:59pm
-              </div>
+              <img id="weather-icon" alt="Weather Icon" src="" />
+              <div class="weather-info"></div> <!-- changed from <ul> to <div> -->
             </div>
           </div>
         </div>
+
+        <!-- Forecast Panel -->
         <div class="panel forecast-panel">
           <div class="panel-title">Weather Forecast</div>
           <div class="panel-content">
-            Today: <strong>90°F</strong><br>
-            Wednesday: <strong>89°F</strong><br>
-            Thursday: <strong>68°F</strong>
+            <div class="forecastInfo"></div>
           </div>
         </div>
+
+      </div>
     </section>
 
-    <section class="directory-section container">
+
+    <!-- <section class="directory-section container">
       <div class="business-grid">
         <div class="business-card">
           <div class="business-header">
@@ -157,7 +162,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    <!-- <div id="companies-container"></div> -->
+     <section class="spotlight-section container">
+        <h2>Spotlight Members</h2>
+        <div class="business-grid" id="companies-container"></div>
+      </section>
+
   </main>
 
   <footer>

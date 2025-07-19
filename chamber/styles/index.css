@@ -274,11 +274,18 @@ header {
   padding: 10px 16px;
   letter-spacing: 0.5px;
 }
+
+
 .panel-content {
-  padding: 18px 20px;
-  font-size: 1em;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: start; /* Center items horizontally */
+    padding: 15px; /* Add some padding around the content */
 }
 
+.panel-content p {
+  line-height: 2.3; /* Increases vertical spacing between lines */
+}
 
 .weather-main {
   display: flex;
@@ -293,71 +300,135 @@ header {
   margin-top: 0;
 }
 
-
-/* Directory Section */
-.directory-section {
-  margin: 0 auto;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
+.weather-info div {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
 }
 
-.business-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+.weather-info div:last-child {
+  margin-bottom: 0;
 }
 
-.business-card {
-  height: 100%;          /* Make cards stretch to fill grid row height */
-  display: flex;
-  flex-direction: column;
-  
+
+
+/* General styling for the spotlight section */
+/* styles/index.css or styles/directory-large.css */
+
+.spotlight-section {
+    padding: 2rem 0;
+    text-align: center;
 }
+
+.spotlight-section h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+
 
 .business-header {
-  background: #f3e9d2;
-  padding: 12px 0 6px 0;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
-  border-bottom: 3px solid var(--primary-color);
+    background-color: #4CAF50; /* Green background */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
-.business-title {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 1.1em;
-  color: var(--primary-color);
+
+.business-header .business-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
-.business-tag {
-  font-size: 0.98em;
-  color: #666;
-  margin-bottom: 2px;
+
+.business-header .business-tag {
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
+
 .business-body {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 14px 16px 16px 16px;
-  background: #f3e9d2;
-  border-radius: 0 0 10px 10px;
+    background-color: #f7f2f8; /* Light pink/purple background */
+    padding: 1rem;
+    flex-grow: 1; /* Allows this section to expand and fill available space */
+    display: flex;
+    flex-direction: column; /* Stack the info lines */
+    justify-content: center;
 }
-.business-img {
-  width: 56px;
-  height: 56px;
-  background: #e0e0e0;
-  border-radius: 5px;
-  margin-right: 8px;
-  flex-shrink: 0;
+
+.business-info div {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    text-align: center; /* Center the text within each info line */
 }
-.business-info {
-  font-size: 0.98em;
-  color: #222;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+
+.business-info div:last-child {
+    margin-bottom: 0;
+}
+
+.business-info a {
+    color: #007bff; /* Blue for links */
+    text-decoration: none;
+}
+
+.business-info a:hover {
+    text-decoration: underline;
+}
+
+#companies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    max-width: 1400px;                     /* Wider overall layout */
+    margin: 20px auto;                     /* Center horizontally */
+    padding: 10px 10px;                    /* Reduce side padding */
+    gap: 10px;                             /* Less gap between cards */
+}
+
+.showCompanies {
+    background-color: var(--panel-bg);
+    border: 2px solid var(--accent);
+    border-radius: var(--border-radius);
+    width: 100%;                           /* Take full width of grid cell */
+    max-width: none;                       /* Remove max-width constraint */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    color: var(--text-color);
+    margin: 0;                              /* Remove auto-centering margin */
+}
+
+
+.showCompanies:hover {
+  transform: translateY(-5px);
+}
+
+.comp-heading {
+  background-color: var(--panel-title-bg); /* Deep navy */
+  color: var(--panel-title-color);         /* White */
+  padding: 16px;
+  text-align: center;
+}
+
+.companyInfo {
+  padding: 16px;
+  background-color: var(--background-color); /* Light sand */
+  font-size: 0.95rem;
+}
+
+.companyInfo p {
+  margin-bottom: 0.75rem;
+}
+
+.companyInfo a {
+  color: var(--primary-color); /* Deep navy blue links */
+  text-decoration: none;
+}
+
+.companyInfo a:hover {
+  text-decoration: underline;
+  color: var(--accent); /* Gold hover */
 }
 
 /* Footer */
@@ -639,9 +710,9 @@ footer strong {
     grid-column: span 2;
   }
   
-  .business-grid {
+  /* .business-grid {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
   
   .footer-content {
     grid-template-columns: 1fr 1fr;
@@ -651,4 +722,18 @@ footer strong {
 /* Ensure dark mode toggle is visible */
 .nav-links .dark-toggle {
   padding: 8px 0;
+}
+
+@media (max-width: 680px) {
+    #companies-container {
+        grid-template-columns: 1fr; /* Single column on narrow screens */
+        max-width: 340px;           /* Max width for mobile */
+        padding: 10px 5px;
+        gap: 8px;                  /* Slightly smaller gap on mobile */
+    }
+
+    .showCompanies {
+        /* Optional: Add margin or tweak style for better mobile spacing */
+        margin: 0 auto;
+    }
 }

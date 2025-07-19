@@ -70,10 +70,13 @@ function displayList(allCompanies) {
 
         table.innerHTML = `
             <div>${allCompany.name}</div>
-            <div>${allCompany.address}</div>
-            <div>${allCompany.phoneNumbers}</div>
-            <div><a href="${allCompany.webAddress}" target="_blank">${allCompany.webAddress}</a></div>
-        `
+            <div>
+                ${allCompany.address}<br>
+                ${allCompany.phoneNumbers}
+            </div>
+            <div><a href="${allCompany.webAddress}" target="_blank">Visit Site</a></div>
+            `
+
         getCompanyList.appendChild(table);
         
     });
