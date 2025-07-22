@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #14213d;           /* Deep navy blue for headings/nav/footer text */
+  --secondary-color: #eab308;         /* Gold accent */
+  --background-color: #f9f6f1;        /* Light sand */
+  --panel-bg: #fff;
+  --panel-title-bg: #1a3557;
+  --panel-title-color: #fff;
+  --text-color: #14213d;              /* Deep navy blue for body text */
+  --accent: #eab308;
+  --border-radius: 8px;
+  --font-heading: 'Montserrat', Arial, sans-serif;
+  --font-body: 'Open Sans', Arial, sans-serif;
+  --nav-bg: #14213d;                  /* Deep navy blue for nav bar */
+
+
+
+    font-family: Outfit, "Humanst521 BT", roboto, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+#displayApp h1,
+#displayApp span p {
+    text-align: center;
+}
+
+.infoContainer {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+
+}
+
+
+#displayApp .sec1 p,
+#displayApp .sec2 p {
+    padding: 8px;
+    border-bottom: 1px solid lightgray;
+}
+
+#displayApp .sec1,
+#displayApp .sec2 {
+    border: 1px solid lightgray;
+}
+
+
+#displayApp .sec1 {
+    background-color: var(--accent);
+}

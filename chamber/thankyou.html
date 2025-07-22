@@ -26,11 +26,13 @@
 
     
     <link rel="stylesheet" href="styles/index.css" media="screen">
-    <link rel="stylesheet" href="styles/directory.css" media="screen">
+    <link rel="stylesheet" href="styles/thankyou.css" media="screen">
+    <!-- <link rel="stylesheet" href="styles/directory.css" media="screen"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Font Awesome 6.6.0 -->
 
     <script src="scripts/index.js" type="module"></script>
     <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/nav.js" defer></script>
 
 </head>
@@ -60,7 +62,7 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a href="#">Join</a></li>
           <li><a href="#">Discover</a></li>
         </ul>
       </nav>
@@ -68,108 +70,9 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Welcome to Timbuktu Chamber of Commerce</h2>
-        <p>Connecting businesses, fostering growth, and building a vibrant community in the heart of Mali.</p>
-        <button class="btn primary-btn">Keynote Tickets</button>
-      </div>
-    </section>
-    
-
-    <section class="main-panels container">
-      <h1>Home</h1>
-      <div class="panels-grid">
-        
-        <!-- Events Panel -->
-        <div class="panel events-panel">
-          <div class="panel-title">Events</div>
-          <div class="panel-content">
-            <p>
-              <strong>Abuja Networking Conference</strong><br>
-              Date: 28th April 2025<br>
-              Time: 4pm<br>
-              Venue: Transcorp Hilton, Abuja.
-            </p>
-          </div>
-        </div>
-
-        <!-- Weather Panel -->
-        <div class="panel weather-panel">
-          <div class="panel-title">Current Weather</div>
-          <div class="panel-content">
-            <div class="weather-main">
-              <img id="weather-icon" alt="Weather Icon" src="" />
-              <div class="weather-info"></div> <!-- changed from <ul> to <div> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Forecast Panel -->
-        <div class="panel forecast-panel">
-          <div class="panel-title">Weather Forecast</div>
-          <div class="panel-content">
-            <div class="forecastInfo"></div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- <section class="directory-section container">
-      <div class="business-grid">
-        <div class="business-card">
-          <div class="business-header">
-            <div class="business-title">Small Business Owner</div>
-            <div class="business-tag">Business Tag Line</div>
-          </div>
-          <div class="business-body">
-            <div class="business-img"></div>
-            <div class="business-info">
-              <div><strong>EMAIL:</strong> info@gmail.com</div>
-              <div><strong>PHONE:</strong> 800-555-1234</div>
-              <div><strong>URL:</strong> mybusiness.com</div>
-            </div>
-          </div>
-        </div>
-        <div class="business-card">
-          <div class="business-header">
-            <div class="business-title">Corporate Executive</div>
-            <div class="business-tag">Business Tag Line</div>
-          </div>
-          <div class="business-body">
-            <div class="business-img"></div>
-            <div class="business-info">
-              <div><strong>EMAIL:</strong> info@gmail.com</div>
-              <div><strong>PHONE:</strong> 800-555-1234</div>
-              <div><strong>URL:</strong> mybusiness.com</div>
-            </div>
-          </div>
-        </div>
-        <div class="business-card">
-          <div class="business-header">
-            <div class="business-title">The New Resident</div>
-            <div class="business-tag">Business Tag Line</div>
-          </div>
-          <div class="business-body">
-            <div class="business-img"></div>
-            <div class="business-info">
-              <div><strong>EMAIL:</strong> info@gmail.com</div>
-              <div><strong>PHONE:</strong> 800-555-1234</div>
-              <div><strong>URL:</strong> mybusiness.com</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- <div id="companies-container"></div> -->
-     <section class="spotlight-section container">
-        <h2>Spotlight Members</h2>
-        <div class="business-grid" id="companies-container"></div>
-      </section>
-
+    <div id="displayApp"></div>
   </main>
+
 
   <footer>
     <div class="footer-content container">
