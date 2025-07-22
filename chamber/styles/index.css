@@ -448,7 +448,7 @@ header {
 footer {
   background: var(--primary-color);
   color: #fff;
-  padding: 48px 0 18px;
+  padding-top: 48px;
   font-size: 1em;
   margin-top: 48px;
 }
@@ -510,6 +510,31 @@ footer strong {
   fill: var(--secondary-color);
 }
 
+/* Footer Styling */
+.footend-container {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.footer-end p {
+    margin: 2px 0;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 680px) {
+    .footer-end p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
+
 /* Desktop: Place dark-toggle absolutely to the far right in header */
 @media screen and (min-width: 768px) {
   .dark-toggle {
@@ -538,6 +563,7 @@ footer strong {
   /* General Adjustments */
   body {
     font-size: 14px;
+    
   }
   
   .container {
