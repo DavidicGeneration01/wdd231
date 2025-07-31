@@ -1,0 +1,14 @@
+{
+  "name": "Event Name",
+  "datetime": "2025-10-10T18:00:00Z",
+  "venue": {
+    "name": "Venue Name",
+    "city": "City Name",
+    "state": "State Code",
+    "generalInfo": {
+      "generalRule": "Some rules here"
+    }
+  },
+  "image": "https://example.com/image.jpg",
+  "pleaseNote": "Some event note"
+}
