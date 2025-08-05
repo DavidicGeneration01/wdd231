@@ -1,0 +1,112 @@
+[
+  {
+    "name": "E-Ride Falcon X1",
+    "image": "https://example.com/images/falcon-x1.jpg",
+    "description": "The Falcon X1 is built for speed and agility, with a powerful 5000W motor and a sleek carbon fiber body."
+  },
+  {
+    "name": "E-Ride Cruiser 500",
+    "image": "https://example.com/images/cruiser-500.jpg",
+    "description": "A perfect blend of comfort and performance, the Cruiser 500 is ideal for long city commutes with its 120km range."
+  },
+  {
+    "name": "E-Ride Thunderbolt Pro",
+    "image": "https://example.com/images/thunderbolt-pro.jpg",
+    "description": "Equipped with dual suspension and advanced traction control, Thunderbolt Pro handles all terrains effortlessly."
+  },
+  {
+    "name": "E-Ride Comet RS",
+    "image": "https://example.com/images/comet-rs.jpg",
+    "description": "Compact and lightweight, the Comet RS is perfect for zipping through traffic with its responsive controls."
+  },
+  {
+    "name": "E-Ride Titan Max",
+    "image": "https://example.com/images/titan-max.jpg",
+    "description": "An all-terrain beast, Titan Max offers unmatched durability, 150km range, and a regenerative braking system."
+  },
+  {
+    "name": "E-Ride Shadow Z",
+    "image": "https://example.com/images/shadow-z.jpg",
+    "description": "Shadow Z combines stealth design with an ultra-quiet motor and night-vision dashboard."
+  },
+  {
+    "name": "E-Ride Ranger V2",
+    "image": "https://example.com/images/ranger-v2.jpg",
+    "description": "With a rugged frame and high clearance, Ranger V2 is ready for off-road adventures."
+  },
+  {
+    "name": "E-Ride Phantom Core",
+    "image": "https://example.com/images/phantom-core.jpg",
+    "description": "Sleek and stylish, Phantom Core offers high speed and a smooth riding experience."
+  },
+  {
+    "name": "E-Ride Nova R1",
+    "image": "https://example.com/images/nova-r1.jpg",
+    "description": "The Nova R1 features intelligent AI driving assist and anti-theft GPS tracking."
+  },
+  {
+    "name": "E-Ride Eclipse Neo",
+    "image": "https://example.com/images/eclipse-neo.jpg",
+    "description": "A futuristic design with smart LED lighting and advanced connectivity features."
+  },
+  {
+    "name": "E-Ride Blaze GT",
+    "image": "https://example.com/images/blaze-gt.jpg",
+    "description": "Blaze GT reaches 0-60km/h in just 3.5 seconds, with ultra-fast charging support."
+  },
+  {
+    "name": "E-Ride EcoLite",
+    "image": "https://example.com/images/ecolite.jpg",
+    "description": "A compact and affordable e-ride built for urban travel with a 60km range."
+  },
+  {
+    "name": "E-Ride Striker Alpha",
+    "image": "https://example.com/images/striker-alpha.jpg",
+    "description": "Striker Alpha features smart voice controls and gesture-based navigation."
+  },
+  {
+    "name": "E-Ride Pulse Mini",
+    "image": "https://example.com/images/pulse-mini.jpg",
+    "description": "Designed for teens and students, Pulse Mini is lightweight and safe."
+  },
+  {
+    "name": "E-Ride Apex Cruiser",
+    "image": "https://example.com/images/apex-cruiser.jpg",
+    "description": "A premium city cruiser with leather seating and Bluetooth audio system."
+  },
+  {
+    "name": "E-Ride Vortex 9",
+    "image": "https://example.com/images/vortex-9.jpg",
+    "description": "A sports-oriented e-ride with racing-grade suspension and brakes."
+  },
+  {
+    "name": "E-Ride Aero Edge",
+    "image": "https://example.com/images/aero-edge.jpg",
+    "description": "Aerodynamically enhanced body for high-speed efficiency and reduced drag."
+  },
+  {
+    "name": "E-Ride Stealth Mode",
+    "image": "https://example.com/images/stealth-mode.jpg",
+    "description": "Designed for covert operations, Stealth Mode is silent, fast, and nearly invisible at night."
+  },
+  {
+    "name": "E-Ride Horizon TRX",
+    "image": "https://example.com/images/horizon-trx.jpg",
+    "description": "Long-range touring made easy with Horizon TRX, featuring built-in solar charging panels."
+  },
+  {
+    "name": "E-Ride Rapid-X",
+    "image": "https://example.com/images/rapid-x.jpg",
+    "description": "Rapid-X is built for thrill-seekers, reaching top speeds of 120km/h with minimal vibration."
+  },
+  {
+    "name": "E-Ride Orbit Glide",
+    "image": "https://example.com/images/orbit-glide.jpg",
+    "description": "Orbit Glide offers cloud-like suspension and noise-free cruising, perfect for city gliders."
+  },
+  {
+    "name": "E-Ride Zenith Evo",
+    "image": "https://example.com/images/zenith-evo.jpg",
+    "description": "The Zenith Evo leads the pack with AI-adaptive speed, self-balancing tech, and luxury design."
+  }
+]
