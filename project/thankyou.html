@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" href="styles/normalize.css" media="screen">
     <link rel="stylesheet" href="styles/index.css" media="screen">
-    <link rel="stylesheet" href="styles/club.css" media="screen">
+    <link rel="stylesheet" href="styles/thankyou.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
     <script src="scripts/index.js" defer></script>
@@ -58,9 +58,9 @@
 
             <nav class="nav-links">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="club.html">Club Directory</a></li>
-                    <li><a href="join.html">Join a Ride</a></li>
+                    <li><a href="join.html" class="active">Join a Ride</a></li>
                     <li><a href="gallery.html">Rider Gallery</a></li>
                 </ul>
             </nav>
@@ -70,43 +70,19 @@
     </header>
 
     <main>
+        <div class="thanks-msg">
+            <div>
+                <p>Thanks for joining</p>
+                <p>The E-Rider Community</p>
 
-        <section id="hero-container">
-
-            <div class="pic-src">
-                <picture>
-                    <source srcset="images/hero2.jpg" media="(min-width: 1000px)">
-                    <img src="images/hero1.jpg" alt="Hero image" width="463" height="618">
-                </picture>
-
-
-                <div class="hero-msg">
-                    <h1>Discover the freedom of electric biking with our  
-                        <br>range of high-performance e-bikes.
-                    </h1>
-        
-                    <button><a href="join.html">Join us</a></button>
-                </div>
+                <a href="index.html"> 
+                    <button type="button"> Back </button> 
+                </a>
 
             </div>
-
-
-        </section> 
-
-        <section class="all-events"> 
-            <h2>Upcoming Events</h2>
-
-            <div class="event-container"></div>
-
-            <a href="club.html" class="toEvent">
-                <button type="button" class="new-btn">More events ➡</button>
-            </a>
-
-        </section>
-
-        <dialog class="moreInfoWrapper"> </dialog>
-
-
+            
+        </div>
+    
         
 
     </main>

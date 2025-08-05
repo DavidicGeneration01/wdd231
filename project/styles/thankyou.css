@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #B80C09;       /* Engineering Orange – bold calls to action */
+  --secondary-color: #01BAEF;     /* Process Cyan – vibrant interactive accents */
+  --accent-color1: #FBFBFF;       /* Pure White – clean page background */
+  --accent-color2: #040F16;       /* Rich Black – for text, navs, footers */
+  --accent-color3: #0B4F6C;       /* Indigo Dye – classy header elements */
+  --rich-black: #010B13;          /* Extra deep black – optional darker contrast */
+
+
+    font-family: Outfit, Raleway, sans-serif;
+    background-color: var(--accent-color1);
+    font-size: 16px;
+
+}
+
+.thanks-msg {
+    position: relative;
+    height: 100vh;
+    background: url('../images/thankyou-hero.jpg') center center no-repeat;
+    background-size: cover;    
+    opacity: var(--rich-black) .6;
+}
+
+.thanks-msg p {
+    color: var(--accent-color2);
+    font-size: 3rem;
+    font-family: Raleway, Outfit, sans-serif;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.thanks-msg div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thanks-msg p:nth-of-type(2) {
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+.thanks-msg div button {
+    padding: 12px 23px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.thanks-msg a button {
+    color: white;
+
+}
