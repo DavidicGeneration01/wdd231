@@ -24,6 +24,9 @@ function renderRides(rides) {
     }
 
     rides.forEach(ride => {
+        // Debug log for each ride's name and price
+        console.log(`Name: ${ride.name}, Price: ${ride.price}`);
+
         const card = document.createElement('div');
         card.classList.add('collection-card');
 
