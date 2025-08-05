@@ -1,8 +1,7 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Page Loaded");
 
-    fetch('rides.json')
+    fetch('https://davidicgeneration01.github.io/wdd231/project/data/rides.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -18,6 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderRides(rides) {
     const container = document.querySelector('.AllCollections');
+
+    if (!container) {
+        console.error("Container '.AllCollections' not found in the DOM.");
+        return;
+    }
+
     rides.forEach(ride => {
         const card = document.createElement('div');
         card.classList.add('collection-card');
@@ -27,6 +32,7 @@ function renderRides(rides) {
             <div class="card-content">
                 <h3 class="card-title">${ride.name}</h3>
                 <p class="card-description">${ride.description}</p>
+                <p class="card-price">${ride.price}</p>
             </div>
         `;
 

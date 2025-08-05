@@ -68,3 +68,10 @@ h2 {
     font-size: 0.95em;
     color: #555;
 }
+
+.card-price {
+    font-size: 1em;
+    color: #01BAEF;
+    font-weight: bold;
+    margin-top: 10px;
+}
