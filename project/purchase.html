@@ -34,11 +34,11 @@
 
     <link rel="stylesheet" href="styles/normalize.css" media="screen">
     <link rel="stylesheet" href="styles/index.css" media="screen">
-    <link rel="stylesheet" href="styles/gallery.css" media="screen">
+    <link rel="stylesheet" href="styles/purchase.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
     <script src="scripts/index.js" defer></script>
-    <script src="scripts/gallery.js" defer></script>
+    <script src="scripts/purchase.js" defer></script>
     <script src="scripts/nav-foot.js" defer></script>
     <script type="module" src="scripts/greetingMsg.js"></script>
 
@@ -74,12 +74,71 @@
     </header>
 
     <main>
-        <section class="allevents-container">
-            <h2>E-Ride Collections</h2>
-            <div class="AllCollections"></div> 
-        </section>
+        <div class="purchase-container">
+        <h1>Buy Your E-Ride</h1>
+        
+        <form id="purchaseForm">
+        <label for="ride">Select E-Ride:</label>
+        <select id="ride" name="ride" required>
+            <option value="">-- Choose a ride --</option>
+            <!-- JS will populate this -->
+        </select>
 
-        <button class="buy-now"><a href="purchase.html">Buy Now</a></button>
+        <div class="price-display" id="ridePrice"></div>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+            <option value="">-- Choose Payment Method --</option>
+            <option value="credit">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="crypto">Crypto</option>
+        </select>
+
+        <!-- Payment method extra fields -->
+        <div class="payment-section hidden" id="credit-section">
+        <label for="cc-name">Name on Card:</label>
+        <input type="text" id="cc-name" name="cc-name" />
+
+        <label for="cc-number">Card Number:</label>
+        <input type="text" id="cc-number" name="cc-number" />
+
+        <label for="cc-expiry">Expiry Date:</label>
+        <input type="text" id="cc-expiry" name="cc-expiry" placeholder="MM/YY" />
+
+        <label for="cc-cvv">CVV:</label>
+        <input type="text" id="cc-cvv" name="cc-cvv" />
+        </div>
+
+        <div class="payment-section hidden" id="paypal-section">
+        <label for="paypal-email">PayPal Email:</label>
+        <input type="email" id="paypal-email" name="paypal-email" />
+        </div>
+
+        <div class="payment-section hidden" id="crypto-section">
+        <label for="crypto-wallet">Crypto Wallet Address:</label>
+        <input type="text" id="crypto-wallet" name="crypto-wallet" />
+        </div>
+
+
+        <button type="submit">Place Order</button>
+        </form>
+
+        <div id="confirmation" class="hidden">
+        <h2>Thank you for your order!</h2>
+        <p>Your e-ride will be delivered shortly.</p>
+        </div>
+    </div>
+
+    
     </main>
 
 

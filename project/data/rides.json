@@ -1,134 +1,156 @@
 [
   {
     "name": "E-Ride Falcon X1",
-    "image": "https://davidicgeneration01.github.io/wdd231/project/images/rides/falcon-x1.jpg",
+    "image": "./images/rides/falcon-x1.png",
     "description": "The Falcon X1 is built for speed and agility, with a powerful 5000W motor and a sleek carbon fiber body.",
-    "price": "$3,999"
+    "price": "$3,999",
+    "link": "purchase.html?ride=E-Ride%20Falcon%20X1"
   },
   {
     "name": "E-Ride Cruiser 500",
-    "image": "https://example.com/images/cruiser-500.jpg",
+    "image": "./images/rides/cruiser-500.png",
     "description": "A perfect blend of comfort and performance, the Cruiser 500 is ideal for long city commutes with its 120km range.",
-    "price": "$3,299"
+    "price": "$3,299",
+    "link": "purchase.html?ride=E-Ride%20Cruiser%20500"
   },
   {
     "name": "E-Ride Thunderbolt Pro",
-    "image": "https://example.com/images/thunderbolt-pro.jpg",
+    "image": "./images/rides/thunderbolt-pro.png",
     "description": "Equipped with dual suspension and advanced traction control, Thunderbolt Pro handles all terrains effortlessly.",
-    "price": "$4,599"
+    "price": "$4,599",
+    "link": "purchase.html?ride=E-Ride%20Thunderbolt%20Pro"
   },
   {
     "name": "E-Ride Comet RS",
-    "image": "https://example.com/images/comet-rs.jpg",
+    "image": "./images/rides/comet-rs.png",
     "description": "Compact and lightweight, the Comet RS is perfect for zipping through traffic with its responsive controls.",
-    "price": "$2,899"
+    "price": "$2,899",
+    "link": "purchase.html?ride=E-Ride%20Comet%20RS"
   },
   {
     "name": "E-Ride Titan Max",
     "image": "https://example.com/images/titan-max.jpg",
     "description": "An all-terrain beast, Titan Max offers unmatched durability, 150km range, and a regenerative braking system.",
-    "price": "$5,499"
+    "price": "$5,499",
+    "link": "purchase.html?ride=E-Ride%20Titan%20Max"
   },
   {
     "name": "E-Ride Shadow Z",
     "image": "https://example.com/images/shadow-z.jpg",
     "description": "Shadow Z combines stealth design with an ultra-quiet motor and night-vision dashboard.",
-    "price": "$4,199"
+    "price": "$4,199",
+    "link": "purchase.html?ride=E-Ride%20Shadow%20Z"
   },
   {
     "name": "E-Ride Ranger V2",
     "image": "https://example.com/images/ranger-v2.jpg",
     "description": "With a rugged frame and high clearance, Ranger V2 is ready for off-road adventures.",
-    "price": "$3,749"
+    "price": "$3,749",
+    "link": "purchase.html?ride=E-Ride%20Ranger%20V2"
   },
   {
     "name": "E-Ride Phantom Core",
     "image": "https://example.com/images/phantom-core.jpg",
     "description": "Sleek and stylish, Phantom Core offers high speed and a smooth riding experience.",
-    "price": "$4,050"
+    "price": "$4,050",
+    "link": "purchase.html?ride=E-Ride%20Phantom%20Core"
   },
   {
     "name": "E-Ride Nova R1",
     "image": "https://example.com/images/nova-r1.jpg",
     "description": "The Nova R1 features intelligent AI driving assist and anti-theft GPS tracking.",
-    "price": "$4,799"
+    "price": "$4,799",
+    "link": "purchase.html?ride=E-Ride%20Nova%20R1"
   },
   {
     "name": "E-Ride Eclipse Neo",
     "image": "https://example.com/images/eclipse-neo.jpg",
     "description": "A futuristic design with smart LED lighting and advanced connectivity features.",
-    "price": "$4,250"
+    "price": "$4,250",
+    "link": "purchase.html?ride=E-Ride%20Eclipse%20Neo"
   },
   {
     "name": "E-Ride Blaze GT",
     "image": "https://example.com/images/blaze-gt.jpg",
     "description": "Blaze GT reaches 0-60km/h in just 3.5 seconds, with ultra-fast charging support.",
-    "price": "$5,150"
+    "price": "$5,150",
+    "link": "purchase.html?ride=E-Ride%20Blaze%20GT"
   },
   {
     "name": "E-Ride EcoLite",
     "image": "https://example.com/images/ecolite.jpg",
     "description": "A compact and affordable e-ride built for urban travel with a 60km range.",
-    "price": "$1,999"
+    "price": "$1,999",
+    "link": "purchase.html?ride=E-Ride%20EcoLite"
   },
   {
     "name": "E-Ride Striker Alpha",
     "image": "https://example.com/images/striker-alpha.jpg",
     "description": "Striker Alpha features smart voice controls and gesture-based navigation.",
-    "price": "$3,899"
+    "price": "$3,899",
+    "link": "purchase.html?ride=E-Ride%20Striker%20Alpha"
   },
   {
     "name": "E-Ride Pulse Mini",
     "image": "https://example.com/images/pulse-mini.jpg",
     "description": "Designed for teens and students, Pulse Mini is lightweight and safe.",
-    "price": "$1,499"
+    "price": "$1,499",
+    "link": "purchase.html?ride=E-Ride%20Pulse%20Mini"
   },
   {
     "name": "E-Ride Apex Cruiser",
     "image": "https://example.com/images/apex-cruiser.jpg",
     "description": "A premium city cruiser with leather seating and Bluetooth audio system.",
-    "price": "$3,750"
+    "price": "$3,750",
+    "link": "purchase.html?ride=E-Ride%20Apex%20Cruiser"
   },
   {
     "name": "E-Ride Vortex 9",
     "image": "https://example.com/images/vortex-9.jpg",
     "description": "A sports-oriented e-ride with racing-grade suspension and brakes.",
-    "price": "$4,399"
+    "price": "$4,399",
+    "link": "purchase.html?ride=E-Ride%20Vortex%209"
   },
   {
     "name": "E-Ride Aero Edge",
     "image": "https://example.com/images/aero-edge.jpg",
     "description": "Aerodynamically enhanced body for high-speed efficiency and reduced drag.",
-    "price": "$4,599"
+    "price": "$4,599",
+    "link": "purchase.html?ride=E-Ride%20Aero%20Edge"
   },
   {
     "name": "E-Ride Stealth Mode",
     "image": "https://example.com/images/stealth-mode.jpg",
     "description": "Designed for covert operations, Stealth Mode is silent, fast, and nearly invisible at night.",
-    "price": "$5,299"
+    "price": "$5,299",
+    "link": "purchase.html?ride=E-Ride%20Stealth%20Mode"
   },
   {
     "name": "E-Ride Horizon TRX",
     "image": "https://example.com/images/horizon-trx.jpg",
     "description": "Long-range touring made easy with Horizon TRX, featuring built-in solar charging panels.",
-    "price": "$6,250"
+    "price": "$6,250",
+    "link": "purchase.html?ride=E-Ride%20Horizon%20TRX"
   },
   {
     "name": "E-Ride Rapid-X",
     "image": "https://example.com/images/rapid-x.jpg",
     "description": "Rapid-X is built for thrill-seekers, reaching top speeds of 120km/h with minimal vibration.",
-    "price": "$4,850"
+    "price": "$4,850",
+    "link": "purchase.html?ride=E-Ride%20Rapid-X"
   },
   {
     "name": "E-Ride Orbit Glide",
     "image": "https://example.com/images/orbit-glide.jpg",
     "description": "Orbit Glide offers cloud-like suspension and noise-free cruising, perfect for city gliders.",
-    "price": "$3,599"
+    "price": "$3,599",
+    "link": "purchase.html?ride=E-Ride%20Orbit%20Glide"
   },
   {
     "name": "E-Ride Zenith Evo",
     "image": "https://example.com/images/zenith-evo.jpg",
     "description": "The Zenith Evo leads the pack with AI-adaptive speed, self-balancing tech, and luxury design.",
-    "price": "$6,999"
+    "price": "$6,999",
+    "link": "purchase.html?ride=E-Ride%20Zenith%20Evo"
   }
 ]
