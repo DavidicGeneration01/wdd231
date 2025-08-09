@@ -64,13 +64,13 @@ button {
 }
 
 button:hover {
-  background: #0056b3;
+  background: var(--secondary-color);
 }
 
 .price-display {
   margin-top: 0.5rem;
   font-weight: bold;
-  color: #28a745;
+  color: var(--secondary-color);
 }
 
 .hidden {
@@ -80,7 +80,7 @@ button:hover {
 #confirmation {
   text-align: center;
   margin-top: 2rem;
-  color: #28a745;
+  color: var(--primary-color);
 }
 .payment-section label {
   display: block;

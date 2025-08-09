@@ -62,6 +62,7 @@ h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
     font-weight: bold;
+    color: var(--primary-color);
 }
 
 .card-description {
@@ -81,8 +82,8 @@ h2 {
     right: 20px;
     transform: translateY(-50%);
     padding: 12px 24px;
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--accent-color1);
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -91,6 +92,13 @@ h2 {
     z-index: 999;
 }
 
+.buy-now a {
+    color: var(--accent-color1);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .buy-now:hover {
-    background-color: #081482;
+    background-color: var(--accent-color3);
 }
